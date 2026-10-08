@@ -84,4 +84,5 @@ test('selecting an unavailable date keeps the current date selection', async ({ 
   const initiallySelectedDate = await app.bookingFlowDateTimePage.showsSelectedDateLabel();
   await app.bookingFlowDateTimePage.clickToSelectUnavailableDate();
   await app.bookingFlowDateTimePage.assertSelectedDateLabelExists(initiallySelectedDate);
+  expect(true).toBe(false);
 });
